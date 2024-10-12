@@ -2,21 +2,25 @@
 
 # DevOps
 
-1. The Virtual Box was dowloaded and the relevant options from the tasks 1,2,3 were implemented.
-   ![Installation](https://github.com/Alex-Sigma/DevOps/blob/lecture3/images/2_Install_Ubuntu.png)
+1. Task1: nginx was automaticall installed via bash script by using the provision in the vagrant file.
+   ![bash-nginx](https://github.com/Alex-Sigma/DevOps/blob/lecture6/images/nginx_Bash.png)
 
-Here is also the relevant options that were selected(Hardware 2 GB, 20GB for VDI, 2 Prozessors, activated option EFI, plus selected Bridge adapter)
+![nginx_provision](https://github.com/Alex-Sigma/DevOps/blob/lecture6/images/nginx_provision.png)
 
-![CreatingOptions](https://github.com/Alex-Sigma/DevOps/blob/lecture3/images/2_3_Create%20VM_Options.png)
+![nginx_installed](https://github.com/Alex-Sigma/DevOps/blob/lecture6/images/nginx_installed.png)
 
-![Bridge Adapter](https://github.com/Alex-Sigma/DevOps/blob/lecture3/images/3_Set_Bridge_Adapter.png)
+![nginx_ip](https://github.com/Alex-Sigma/DevOps/blob/lecture6/images/nnginx_ip.png)
 
-![Initial_Installation_Parameters](https://github.com/Alex-Sigma/DevOps/blob/lecture3/images/4_VM_Installation_Sum.png)
+Here is the deinstallation of nginx
+![nginx_deinstall](https://github.com/Alex-Sigma/DevOps/blob/lecture6/images/nginx_deinstall.png)
 
-For the task 5 the snapshot of the system was made to fall back if needed:
+1. Task2: Developing the service with timer that save the current time to the log file.
 
-![Initial_Installation_Parameters](https://github.com/Alex-Sigma/DevOps/blob/lecture3/images/5_Snapshot_Init.png)
+Creating the bash script and logfile:
+![service_bash_logfile](https://github.com/Alex-Sigma/DevOps/blob/lecture6/images/service_bash_logfile.png)
 
-Finally the parameters were changed to VDI 30GB, 4 Prozessors, Matherboar 4 GB etc.
+Creating the service file and the timer file.
+![service_CreateService_Timer](https://github.com/Alex-Sigma/DevOps/blob/lecture6/images/service_CreateService_Timer.png)
 
-![Final_Changes](https://github.com/Alex-Sigma/DevOps/blob/lecture3/images/6_Final_Changes.png)
+Activating the Service:  
+![service_activate_service](https://github.com/Alex-Sigma/DevOps/blob/lecture6/images/service_activate_service.png)

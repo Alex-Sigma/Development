@@ -3,7 +3,7 @@
 # DevOps
 
 1. Task1: nginx was automaticall installed via bash script by using the provision in the vagrant file.
-   ![bash-nginx](https://github.com/Alex-Sigma/Development/blob/lecture6/images/nginx_Bash.png)
+   ![bash-nginx](https://github.com/Alex-Sigma/Development/blob/623005149163f7f44c816a2a9583f606198b204f/images/nginx_Bash.png)
 
 ![nginx_provision](https://github.com/Alex-Sigma/Development/blob/lecture6/images/nginx_provision.png)
 

@@ -2,25 +2,21 @@
 
 # DevOps
 
-1. Task1: nginx was automaticall installed via bash script by using the provision in the vagrant file.
-   ![bash-nginx](https://github.com/Alex-Sigma/Development/blob/623005149163f7f44c816a2a9583f606198b204f/images/nginx_Bash.png)
+1. Task1: the database for the educational institutins were created analog home plants
+   ![Database_tables](https://github.com/Alex-Sigma/Development/blob/lecture13/images/Database_tables.png)
 
-![nginx_provision](https://github.com/Alex-Sigma/Development/blob/lecture6/images/nginx_provision.png)
+2. The first sql command to get the infomrmation about children, with educational institutions and classes
 
-![nginx_installed](https://github.com/Alex-Sigma/Development/blob/lecture6/images/nginx_installed.png)
+![sql1_children_institution_class](https://github.com/Alex-Sigma/Development/blob/lecture13/images/sql1_children_institution_class.png)
 
-![nginx_ip](https://github.com/Alex-Sigma/Development/blob/lecture6/images/nginx_ip.png)
+3. Second sql command to get information abou the parents and there chidren
 
-Here is the deinstallation of nginx
-![nginx_deinstall](https://github.com/Alex-Sigma/Development/blob/lecture6/images/nginx_deinstall.png)
+![sql2_parent_child](https://github.com/Alex-Sigma/Development/blob/lecture13/images/sql2_parent_child.png)
 
-1. Task2: Developing the service with timer that save the current time to the log file.
+4. Final command to get the information about the institutions itself
+   ![sql3_institutions](https://github.com/Alex-Sigma/Development/blob/lecture13/images/sql3_institutions.png)
+
+5. Creating the backup of the database:
 
 Creating the bash script and logfile:
-![service_bash_logfile](https://github.com/Alex-Sigma/Development/blob/lecture6/images/service_bash_logfile.png)
-
-Creating the service file and the timer file.
-![service_CreateService_Timer](https://github.com/Alex-Sigma/Development/blob/lecture6/images/service_CreateService_Timer.png)
-
-Activating the Service:  
-![service_activate_service](https://github.com/Alex-Sigma/Development/blob/lecture6/images/service_activate_service.png)
+![backup_database](https://github.com/Alex-Sigma/Development/blob/lecture13/images/backup_database.png)

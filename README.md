@@ -17,6 +17,4 @@
    ![sql3_institutions](https://github.com/Alex-Sigma/Development/blob/lecture13/images/sql3_institutions.png)
 
 5. Creating the backup of the database:
-
-Creating the bash script and logfile:
-![backup_database](https://github.com/Alex-Sigma/Development/blob/lecture13/images/backup_database.png)
+   ![backup_database](https://github.com/Alex-Sigma/Development/blob/lecture13/images/backup_database.png)

@@ -1,13 +1,17 @@
 # DevOps
 
-# DevOps
+What was my process first i have created the required filing system:
+mkdir multi-container-app
+cd multi-container-app
+touch docker-compose.yml
 
-1. Task1: First we create the database with script
-   ![Database_Creation](https://github.com/Alex-Sigma/Development/blob/lecture14/images/CreateDB_1.png)
+The final vesion of the docker compose is not the oroginal one. I have faced the problem with trying to scale by usinf the command docker-compose up -d --scale web=3.
 
-2. Here is the created gymDatabase in mongo compas
-   ![database_result](https://github.com/Alex-Sigma/Development/blob/lecture14/images/Create_Database_result.png)
+It did work out and the scaling functions the traefik picks the available adresses.
 
-3. Here is the outputs of the no sql commands
+The commands like -compose up -d and the docker-compose up -d --scale web=3 function with no problems.
+By using the docker network -ls and docker volume -ls inspect my networks and volumes.
 
-![nosql_outputs](https://github.com/Alex-Sigma/Development/blob/lecture14/images/NoSQLs_1_to_3.png)
+In addition I also hot insideby my postgres data by using the docker exec -it multi-container-app-web-1 /bin/bash
+
+Lastly the docker-compose was used to check the state of my containers.

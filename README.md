@@ -1,19 +1,43 @@
 # DevOps
 
-My process:
-At first the required filing system was created:
-mkdir multi-container-app
-cd multi-container-app
-touch docker-compose.yml
+Task 1 postgres cluster:
 
-Than I have prompted the docker-compose.yml
-The final vesion of the docker compose is not the original one. I have faced the problems with trying to scale by using the command docker-compose up -d --scale web=3.
+Creating the postgres cluster:
+here is the functions that were used for its creation:
 
-It did work out only after including the traefik into docker-compose.yml. It has solved the problem with local host addresses assignment.
+Check the existence of he stateful states:
+kubectl get sts
+kubectl get pv
 
-The commands like -compose up -d and the docker-compose up -d --scale web=3 function with no problems.
-By using the docker network -ls and docker volume -ls inspect my networks and volumes.
+Creating the yamls for creating the postgres sets
+vim postgresVolume.yml
+vim postgres-service.yml
+vim postgres-statefulset.yml
 
-In addition I also got inside of my postgres database by using the docker exec -it multi-container-app-web-1 /bin/bash
+create the yaml for the postgres
 
-Lastly the docker-compose was used to check the state of my containers.
+applying the configurations for sts:
+kubectl apply -f postgresVolume.yml
+kubectl apply -f postgres-service.yml  
+kubectl apply -f postgres-statefulset.yml
+
+get description
+kubectl describe pv pv-data-postgres-0
+
+creating the postgress service:
+vim postgres-service.yml
+
+Important:
+Add port to the security rules on AWS:
+EC -> running instances-> click on node-> Security-> add rule
+
+Here we check out postgres sts:
+
+1. Task1: nginx was automaticall installed via bash script by using the provision in the vagrant file.
+   ![2_replicas](https://github.com/Alex-Sigma/Development/blob/lecture18/images/2_replicas_postgres.png)
+
+![running_postgres](https://github.com/Alex-Sigma/Development/blob/lecture18/images/Postgres_running.png)
+
+![persistent_volums](https://github.com/Alex-Sigma/Development/blob/lecture18/images/persistent_volumes.png)
+
+![persistent_volume_2](https://github.com/Alex-Sigma/Development/blob/lecture18/images/postgred_cluster.png)

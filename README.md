@@ -33,8 +33,7 @@ EC -> running instances-> click on node-> Security-> add rule
 
 Here we check out postgres sts:
 
-1. Task1: nginx was automaticall installed via bash script by using the provision in the vagrant file.
-   ![2_replicas](https://github.com/Alex-Sigma/Development/blob/lecture18/images/2_replicas_postgres.png)
+![2_replicas](https://github.com/Alex-Sigma/Development/blob/lecture18/images/2_replicas_postgres.png)
 
 ![running_postgres](https://github.com/Alex-Sigma/Development/blob/lecture18/images/Postgres_running.png)
 

@@ -1,0 +1,11 @@
+apiVersion: v1
+metadata:
+  name: pv-data-postgres-0
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce # Space added here
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: "/mnt/data/postgres-8" # Correct indentation here

@@ -45,8 +45,8 @@ Task 2
 
 creating the Falco
 
-1. First with the deploymnt instructions was created.
-   it can be found in the file yaml with the name falco-daemonset.yaml.
+1. First with the deployment instructions in yaml were created.
+   It can be found in the file yaml with the name falco-daemonset.yaml.
 
 2. Afterwards the the service was deployed with kubectl apply -f falco-daemonset.yaml
 
@@ -56,5 +56,5 @@ creating the Falco
 
 ![Output_pods](https://github.com/Alex-Sigma/Development/blob/lecture18/images/Falco_Pods.png)
 
-There were problem with the space that is why one of the pods was evicted.
+There were probably problema with the space, that is why one of the pods was evicted.
 Open to the suggestions on how to avoid it.
